@@ -139,15 +139,4 @@ input = torch.rand(6, 1, 32, 32, 32)
 prior = torch.rand(3, 1, 32, 32, 32)
 a = model(input, prior, res)
 print('-------')
-# torch.save(model.state_dict(), model_path)
-# torch.onxx.export(model, input, os.path.join(output_path, "res_32.onxx"), export_params=True)
-
-
-# x = torch.load(model_path)
-# # print(x)
-# for key in x:
-#     print(key)
-#     print(x[key].shape)
-    # E_2_res32 = x["E_2.conv1.weight"]
-    # print(E_2_res32.shape)
 
